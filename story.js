@@ -1,11 +1,12 @@
 const STORY = {
 
 start:{
-image:"images/clairiere.jpg",
-text:"Vous vous réveillez dans une clairière. Deux chemins s'offrent à vous.",
+image:"images/Entree.webp",
+text:"Apres une tres longue journée de travail, tu rentres chez toi. Tu ne sais pas si ta femme est chez toi ou chez un ami.",
 choices:[
-{label:"Aller à gauche", next:"foret"},
-{label:"Entrer dans la grotte", next:"grotte"}
+{label:"Entrer", next:"Entrer01"},
+{label:"Envoyer un message", next:"SMS01"}
+{label:"Appeller", next:"tel01"}
 ]
 },
 
