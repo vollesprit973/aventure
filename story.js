@@ -10,21 +10,32 @@ choices:[
 ]
 },
 
-foret:{
-image:"images/foret.jpg",
-text:"La forêt devient dense. Vous entendez un bruit.",
+Entrer01:{
+image:"images/Entree.webp",
+text:"Tu entends du bruit dans la maison.",
 choices:[
-{label:"Continuer", next:"fin1"},
-{label:"Fuir", next:"start"}
+{label:"Ca vient du salon", next:"Salon01"},
+{label:"Ca vient de la chambre", next:"chb01"}
+{label:"Ca vient de la salle de bain", next:"SdB01"}
 ]
 },
 
-grotte:{
-image:"images/grotte.jpg",
-text:"Il fait sombre. Quelque chose bouge.",
+SMS01:{
+image:"images/SMS01.jfif",
+text:"Tu patientes quelques secondes et :",
 choices:[
-{label:"Avancer", next:"fin2"},
-{label:"Sortir", next:"start"}
+{label:"Elle répond, tu vas pouvoir lui demander ce qu'elle fait", next:"SMS02"},
+{label:"Elle ne repond pas, tu l'appelles", next:"tel01"}
+{label:"Elle ne repond pas, tu rentre", next:"Entrer01"}
+]
+},
+
+tel01:{
+image:"images/tel01.jfif",
+text:"Tu patientes quelques sonneries et :",
+choices:[
+{label:" ", next:"fin2"},
+{label:" ", next:"start"}
 ]
 },
 
